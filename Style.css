@@ -1,0 +1,107 @@
+/*
+Theme Name: Site cours FreePascal
+Theme URI: ludus1C.com
+Author: Axel Wehrling
+Description: Cours de Freepascal
+Version: 1.0
+License: Ludus1C
+License URI: Ludus1C.com
+Text domain: ludus1C
+*/
+
+/*Général*/
+
+.cours{
+	text-align:justify;
+	border: 3px inset;
+	border-color: black;
+	background-color: white;
+	margin-left: 350px;
+	margin-right: 200px;
+	width: 60%;
+	padding:40px
+}
+
+.element img{
+	height:120px;
+	
+}
+
+.TitreArti{
+	border: 3px inset;
+	color:white;
+	text-align: justify;
+	border-color: white;
+	background-color: black;
+	margin-left: 350px;
+	margin-right: 200px;
+	width: 60%;
+	padding:5px;
+	
+	
+}
+
+footer{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-item: center;
+	background-color:white;
+	width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
+	border: 3px inset;
+	border-color:black;
+}
+
+
+
+
+
+
+body{
+	
+	background-color:#503B3B;
+	
+}
+
+
+h2{
+	
+	text-decoration: underline;
+	
+}
+
+
+
+article{
+	
+	color:black;
+	text-align:justify;
+	border:5px inset;
+	border-color: black;
+	border-radius: 0px 10px 0px 10px;
+	background-color:white;	
+	width:15%;
+}
+
+.TitreMenu{
+	
+	margin-left:23px;
+	
+}
+
+header{
+	border:3px inset;
+	border-color:black;
+	background-color:white;
+	text-align: center;
+}
+
+
+ul{
+	
+	text-align:justify;
+	color: blue;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8"/> //n'affecte pas ma page, je ne sais pas pourquoi.
+        <title>Free Pascal Constante</title>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	
+		<header>
+				<img src="Images/Titre.png" alt="Titre"/>
+		</header>
+		
+	</head>
+	
+	<body>
+		
+		<br>
+		<br>
+		<section>
+			<article class="Menu">
+				<h2 class="TitreMenu">Menu:</h2>
+				
+				<ul>
+					<li><a href="Index.html">Home.<a/></li>
+					<li><a href="Structure.html">La Structure d'un programme.<a/></li>
+					<li><a href="Variable.html">Les Variables.</a></li>
+					<li><a href="Constante.html">Les Constantes.<a/></li>
+					<li><a href="Procedure et Fonction.html">Les Procedures et Fonctions.</a></li>
+					<li><a href="Tableaux.html">Tableaux/types</a></li>
+				</ul>
+			</article>
+		</section>
+		
+		<h1 class="TitreArti"> Les Boucles: </h1>
+		
+		<aside>
+		
+			<section class="cours">
+				<p>Les boucles permettent au programm d'executer plusieur fois les mêmes lignes de code sous des conditons données.
+				Il existe 3 fonctions pour créer une boucle avec chacune des caractèristique différentes:</p>
+				
+				<p>La première est la boucle "For" (Pour),elle est souvent utilisé dans le cas des incrémentation et décrémentations. Il est nécessaire de
+				lui attribué une variable qui permettra l'incrementaion/decrementaion mais aussi savoir combien de fois la boucle va être répéter 
+				pour utilisé correctement cette fonction:</p>
+				
+				<p><strong>exemple FOR:
+				<br><br>
+				programm For;
+				<br><br>
+				uses crt;
+				<br><br>
+				const kek=8<br><br>
+				var i:integer;<br><br> 
+				BEGIN<br>
+				clrscr;<br>
+				for i:=1 to kek do <mark>(Ici la boucle "for" va repete 8 fois l'instruction writeln('jambon'))</mark><br>
+				writeln('jambon');<br>
+				END.</strong></p>
+				
+				<p>La seconde est la boucle "while" (tantque). C'est une boucle qui fonction avec une condition de sorti, si la condition n'est
+				pas remplie alors la boucle continue de s'execute, jusqu'à même l'infini. C'est une boucle où il ce peut que le programme ne rentre jamais
+				dedans si dès l'entré la condition est remplie alors le programme n'effectura pas une seule fois la boucle.</p>
+				
+				<p><strong>exemple WHILE:
+				<br><br>
+				programm while;
+				<br><br>
+				uses crt;
+				<br><br>
+				const kek=8<br><br>
+				var i:integer;<br><br> 
+				BEGIN<br>
+				clrscr;<br>
+				while (i<>kek) do
+				i:=i+1;<mark>(Ici la boucle "while" va repete l'instruction writeln('jambon') jusqu'à ce que i=kek donc i=8)</mark><br>
+				writeln('jambon')<br>
+				END.</strong></p>
+				
+				<p>La dernière est la boucle "until" (jusqu'a). C'est une boucle tout comme la boucle "for" mais qui commence 
+				avec la fonction "repeat" et se termine avec "until". Cette fois ci quoi qu'il arrive le programme executera au minimum une fois la boucle car
+				car la condition de sortie est après les différentes instructions.</p>
+				
+				<p><strong>exemple UNTIL:
+				<br><br>
+				programm until;
+				<br><br>
+				uses crt;
+				<br><br>
+				const kek=8<br><br>
+				var i:integer;<br><br> 
+				BEGIN<br>
+				clrscr;<br>
+				repeat
+				i:=i+1;<mark>(Ici la boucle "until" va repete l'instruction writeln('jambon') jusqu'à ce que i=kek donc i=8)</mark><br>
+				writeln('jambon');<br>
+				until (i=kek);
+				END.</strong></p>
+				
+				
+				
+			</section>
+			
+		</aside>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<footer>
+			<div class="element"><img src="Images/LogoLaza.png"/></div>
+			<div class="element2"><img src="Images/Bande.jpg"/></div>
+			
+			
+		</footer>
+	</body>
+
+</html>

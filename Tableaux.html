@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8"/> //n'affecte pas ma page, je ne sais pas pourquoi.
+        <title>Free Pascal Tableaux</title>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	
+		<header>
+				<img src="Images/Titre.png" alt="Titre"/>
+		</header>
+		
+	</head>
+	
+	<body>
+		
+		<br>
+		<br>
+		<section>
+			<article class="Menu">
+				<h2 class="TitreMenu">Menu:</h2>
+				
+				<ul>
+					<li><a href="Index.html">Home.<a/></li>
+					<li><a href="Structure.html">La Structure d'un programme.<a/></li>
+					<li><a href="Variable.html">Les Variables.</a></li>
+					<li><a href="Constante.html">Les Constantes.<a/></li>
+					<li><a href="Boucle.html">Les Boucles.</a></li>
+					<li><a href="Procedure et Fonction.html">Les Procedures et Fonctions.</a></li>
+				</ul>
+			</article>
+		</section>
+		
+		<h1 class="TitreArti"> Les Tableaux: </h1>
+		
+		<aside>
+		
+			<section class="cours">
+				<p>Les tableaux ne peuvent être que de certains types:<br>
+				-integer.<br>
+				-string.<br>
+				-char.</p>
+				
+				<p>Il peuvent être à 1 ou 2 dimensions, et on utilise une boucle "for" simple pour afficher un tableau à 
+				1 dimension et une boucle "for" double pour les 2 dimensions. Pour faire d'une variable un tableau on utilise le type "array" suivi 
+				des dimensions du tableau ansi que du type de tableau:</p>
+				
+				<p><strong>exemple 1Dimension:<br><br>
+				
+				Var Tableau1D:array[1..5] of integer; <mark>(J'ai crée un tableau entier à 1 dimension allant de 1 à 5)</mark><br>
+				i,j:integer;<br>
+				<br>
+				BEGIN<br>
+				j:=1;<br>
+				for i:=1 to 5 do<mark> (Boucle qui permet de donner une valeur à chaque "case" du Tableau et de les afficher)</mark><br>
+				Tableau1D[i]:=j;<br>
+				j:=j+1;<br>
+				write(Tableau1D[i]);
+				END.</strong></p>
+				
+				<p><strong>exemple 2Dimension:<br><br>
+				
+				Var Tableau1D:array[1..5,1..10] of integer; <mark>(J'ai crée un tableau entier à 2 dimension allant de 1 à 5 et de 1 à 10)</mark><br>
+				i,j,k:integer;<br>
+				<br>
+				BEGIN<br>
+				j:=1;<br>
+				for i:=1 to 5 do<mark> (Boucle double qui permet de donner une valeur à chaque "case" du Tableau et d'afficher les deux dimensions)</mark><br>
+				for k:=1 to 10 do<br>
+				Tableau1D[i,k]:=j;<br>
+				j:=j+1;<br>
+				write(Tableau1D[i,j]);
+				END.</strong></p>
+				
+				
+				
+				
+				
+			</section>
+			
+			<h1 class="TitreArti">Les Types: </h1>
+		
+		<aside>
+		
+			<section class="cours">
+				<p>Il est possible de créer ses propres types qu'on pourra ensuite attribué à des variables et il est donc 
+				possible de créer des types "tableau". Pour la création de type il est nécessaire qu'elle soit faite avant la création de variable.
+				Exemple ci-dessous avec la création d'un type de "tableau" qui pourra être utilisé sur n'importe qu'elle variable:</p>
+				
+				<p><strong>exemple type:<br><br>
+				type Matrice:array[1..5,1..5] of integer;<mark> (J'ai crée le type "Matrice" qui un tableau à 2 dimension d'entier)</mark><br>
+				<br>
+				Var T1:Matrice; <mark>(Je crée donc ici une variable de nom "T1" de type "Matrice")</mark><br>
+				</strong></p>
+				
+				
+				
+				
+			</section>
+			
+		</aside>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<footer>
+			<div class="element"><img src="Images/LogoLaza.png"/></div>
+			<div class="element2"><img src="Images/Bande.jpg"/></div>
+			
+			
+		</footer>
+	</body>
+
+</html>

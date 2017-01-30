@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8"/> //n'affecte pas ma page, je ne sais pas pourquoi.
+        <title>Free Pascal P/F</title>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	
+		<header>
+				<img src="Images/Titre.png" alt="Titre"/>
+		</header>
+		
+	</head>
+	
+	<body>
+		
+		<br>
+		<br>
+		<section>
+			<article class="Menu">
+				<h2 class="TitreMenu">Menu:</h2>
+				
+				<ul>
+					<li><a href="Index.html">Home.<a/></li>
+					<li><a href="Structure.html">La Structure d'un programme.<a/></li>
+					<li><a href="Variable.html">Les Variables.</a></li>
+					<li><a href="Constante.html">Les Constantes.<a/></li>
+					<li><a href="Boucle.html">Les Boucles.</a></li>
+					<li><a href="Tableaux.html">Tableaux/types</a></li>
+				</ul>
+			</article>
+		</section>
+		
+		<h1 class="TitreArti"> Les Procedures et Fonctions: </h1>
+		
+		<aside>
+		
+			<section class="cours">
+				<p>Les fonctions et les procédures sont des sous programmes qui peuvent être réalisé en dehors du programme principal.
+				Chaque fonction ou procedure possède un nom et peut être appelé dans le programme principal. elles servent généralement 
+				découpé un programme et d'ainsi pouvoir départéger les tâches et d'alléger le programme principal.</p>
+				
+				<p>La différence entre une fonction et une procedure est qu'une fonction renvoie quelque chose, une valeur, un booleen...
+				alors qu'une procedure ne renvoie rien, elle execute seulement.</p>
+				
+				<p>Il est possible de créer des variables dans un sous-programme (fonction/procedure) mais elle ne sera seulement 
+				utilisable dans ce dernier. il est possible de faire un appel de variable par "valeur" où on fait appel la variable désiré,
+				d'un autre sous programme ou d programme principal, et on peut l'utilisé dans le sous-programme où elle a été appeller sans modifier sa valeur 
+				en fin d'execution.</p>
+				
+				<p><strong>exemple "valeur":
+				<br><br>
+				procedure exemple (kek:integer);
+				<br><br>
+				uses crt;
+				<br><br>
+				var i:integer;<br><br> 
+				begin<br>
+				clrscr;<br>
+				i:=1<br>
+				kek:=i;<mark>(Si on reutilise la variable "kek" dans le programme principal elle aura la valeur 8 et non i)</mark><br>
+				end;</strong></p>
+				
+				<p>Il est aussi possible de faire un appel de variable par "adresse". La difference avec l'appel par "valeur" est que toute modification 
+				appliqué sur la variable sera sauvegardé en fin d'execution de la sous procedure.</p>
+				
+				<p><strong>exemple "adresse":
+				<br><br>
+				procedure exemple (kek:integer);
+				<br><br>
+				uses crt;
+				<br><br>
+				var i:integer;<br><br> 
+				begin<br>
+				clrscr;<br>
+				i:=1<br>
+				kek:=i;<mark>(Si on reutilise la variable "kek" dans le programme principal cette fois ci elle aura la valeur i donc kek=1)</mark><br>
+				end;</strong></p>
+				
+				
+			</section>
+			
+		</aside>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<footer>
+			<div class="element"><img src="Images/LogoLaza.png"/></div>
+			<div class="element2"><img src="Images/Bande.jpg"/></div>
+			
+			
+		</footer>
+	</body>
+
+</html>
